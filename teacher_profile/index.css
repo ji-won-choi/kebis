@@ -1,0 +1,58 @@
+/* 바디 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+   margin: 0 auto;
+    width: 80%;
+}
+
+/* 상단바 */
+ul li{  
+           list-style-type: none;
+           float: right;
+}
+ul li a{
+            text-decoration: none;
+            font-weight: bolder;
+        font-size: 25px;
+            color:black;
+            margin: 20px;
+}
+.one li:hover > ul { 
+    display: flex; 
+    flex-direction: column;
+    background:rgba(255,255,255, 0.5);
+    background-size: auto;
+       
+}
+.one ul{
+    display: none; 
+    margin: 0;
+ }
+.one ul li a{
+    color:midnightblue;
+    font-size: 20px;
+}
+.two{
+    position: absolute;
+}
+.nav{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    top: 0px;
+    position: fixed;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+
+/* 본문 */
+
+p{
+    background-color: white;
+    height: 60px;
+}
