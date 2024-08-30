@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>basic</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+
+    <style>
+
+        h, td, tr, input, textarea, select, FORM
+ {
+     font-family:고딕;
+  font-size:1em;
+  border-radius:5px;
+  
+ }
+ 
+ table, FORM
+ {
+  border:1px
+  border-spacing:15px;
+ }
+
+p{
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 12px;
+}    
+
+ </style>
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="header">
+        <div class="container">
+
+            <!--logo-->
+            <div class="logo">
+                <a href="../main/main.html"><img src="image/main_logo2.png" alt="깨비야놀자"></a>
+            </div>
+            <!-- //logo-->
+
+            <button type="button" class="mgnb">
+                <span></span>
+			    <span></span>
+			    <span></span>
+            </button>
+            <!--gnbWrap-->
+            <div class="gnbWrap">
+                <button type="button" class="mgnb-close">모바일메뉴닫기</button>
+                <ul class='gnb clearfix'>
+                    <li><a href="#">로그인</a>
+                    <ul class="two">
+                            <li><a href="../login/login_main.html">로그인 하기</a></li>
+                            <li><a href="../join/join_main.html">회원가입 하기</a></li>
+                        </ul></li>
+                        
+                    <li><a href="#">교구스토어</a>
+                    <ul class="two">
+						<li><a href="../store/store.html">교구 둘러보기</a></li>  
+                        </ul></li>
+                        
+                    <li><a href="#">돌봄신청</a>
+                    <ul class="two">
+                            <li><a href="../teacher/produce.html">깨비 선생님은</a></li>
+                            <li><a href="../teacher_profile/index.html">선생님 프로필</a></li>
+                            <li><a href="../counseling/basic.html">상담신청</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">공지사항</a>
+                        <ul class="two">
+                            <li><a href="../notice/notice.html">공지사항</a></li>
+                            <li><a href="../notice/notice_1.html">Q&A</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">회사소개</a>
+                        <ul class="two">
+						  <li><a href="../company/business_03.html">스토리</a></li>
+                            <li><a href="../map/map.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- // gnbWrap-->
+
+
+        </div>
+    </div>
+    <!-- //header-->
+
+
+    <!--contents-wrap-->
+    <div class='contents-wrap'>
+        <div class='container'>
+
+
+            <a href="#" class="left-banner"><img src="image/leftimg.png" alt="왼쪽배너"></a>
+            <a href="#" class="banner"><img src="image/teacher_banner.png" alt="배너"></a>
+
+            <center>
+                <p class="large-title"> 주문 / 결제 </p><br><br>
+                <table class="join-form" cellspacing="1">
+                    <FORM>
+                        <tr>
+                            <td> 주문상품 </td>
+                            <td>
+                                <table class="t2">
+                                    <tr>
+                                    <td rowspan="3" width="20px"></td>
+                                    <td rowspan="3"><img src="image/ex3.png" width="150px"></td>
+                                    <td rowspan="3" width="20px"></td>
+                                   <td align="left" ><b >우리 집을 지켜주는 수호신</b></td>
+                                    </tr>
+                                    <tr>
+                                    <td align="left"> <p>전통놀이 / 조형활동<br>24,000원    
+                                        </p></td>
+                                    </tr>
+                                 <tr><td><pre>   </pre></td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 수령인 </td>
+                            <td> <input type="text" /> </td>
+                        </tr>
+
+                         <tr>
+                            <td> 휴대폰 </td>
+                            <td>
+
+                                <select>
+                                    <option> 010 </option>
+                                    <option> 011 </option>
+                                    <option> 016 </option>
+                                    <option> 018 </option>
+                                </select>
+                                -
+                                <input type="text" size="6" /> - <input type="text" size="6" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> 배송지정보 </td>
+                            <td>
+                                <input type="text" />
+                                <input class="default mobile" type="button" value="주소찾기" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 상세주소 </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 배송메모</td>
+                            <td>
+                                <select>
+                                    <option>  배송메모를 선택해주세요. </option>
+                                    <option> 배송 전에 미리 연락 바랍니다. </option>
+                                    <option> 집 앞에 놔주세요. </option>
+                                    <option> 경비실에 맡겨주세요. </option>
+                                    <option> 택배함에 놔주세요 </option>
+                                </select>
+                            </td>
+                        </tr>
+                       
+
+                        <tr>
+                            <td> 요청사항 </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                         <tr>
+                            <td> 결제방식 </td>
+                            <td class="check-item">
+                                <input type="radio" name="pay" /> 신용/체크카드 &nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="pay" /> 계좌간편결제 &nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="pay" /> 휴대폰 &nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="pay" /> 무통장 &nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    </FORM>
+                </table>
+
+                <br />
+
+                <div class="join-btn">
+                    <input class="submit-btn" type="submit" value="결제하기" />
+                </div>
+                <!--
+  <button type="submit" class="btn_login"  disabled>가입하기</button>
+    <button type="submit" class="btn_login"  disabled>다시입력</button>
+    -->
+
+            </center>
+
+        </div>
+    </div>
+    <!-- //contents-wrap-->
+
+
+     <!--footer-->
+    <div class="footer">
+        <div class="container">
+           
+            <!--boxwrap-->
+            <div class="clearfix boxwrap">
+                <div class="box">
+                    <p class="title">
+                        <a href="#">BRAND</a>
+                    </p>
+                    <ul>
+                        <li><a href="../company/business_03.html"> 회사소개 </a></li>
+                        <li><a href="../map/map.html">오시는 길</a></li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <p class="title">
+                        <a href="#">PROGRAM</a>
+                    </p>
+                    <ul>
+                        <li><a href="../store/store.html">교구둘러보기</a></li>
+                        <li><a href="#">교구추천받기</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="title">
+                        <a href="#">TEACHER</a>
+                    </p>
+                    <ul>
+                        <li><a href="..//teacher/produce.html">깨비쌤 소개</a></li>
+                        <li><a href="../teacher_profile/index.html">선생님 둘러보기</a></li>
+                        <li><a href="../teacher_recruit/recruit.html">깨비쌤 지원하기</a></li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="box">
+                    <p class="title">
+                        <a href="#">NOTICE</a>
+                    </p>
+                    <ul>
+                        <li><a href="../notice/notice.html">공지사항</a></li>
+                        <li><a href="../notice/notice_1.html">자주하는 질문</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!--//boxwrap-->
+
+            <!--copy-->
+            <div class="copy">
+                <div class="Contact_btn clearfix">
+                    <a href="/pageView/315?t=1592268898731" class="btn btn-default btn-sm">개인정보취급방침</a>
+                    <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="btn btn-default btn-sm">이용약관</a>
+                </div>
+                <address class="address">
+
+                    <p class="title">(주)에스와이에듀 대표 : 정상윤</p>
+                    <p>사업자번호 : 104-86-53007</p>
+                    <p>주소: 서울특별시 중구 서소문로 89, 순화빌딩 15층</p>
+                    <p>대표전화: 0000-0000</p>
+
+                </address>
+                <p class="copyright">Copyright ⓒ 0000. All Rights Reserved.</p>
+            </div>
+            <!-- //copy-->
+
+        </div>
+    </div>
+    <!--//footer-->
+
+    <!--quickmenu-->
+    <ul id="quickmenu">
+        <li class="quick_li_01">QUICK</li>
+        <li class="quick_li_02">
+            <a href="#">
+                <img src="image/rightimg.jpg">
+                <p>교육문의</p>
+            </a>
+        </li>
+        <li class="quick_li_03">
+            <p>고객센터</p>
+            <strong>
+                1688<br>~<br>6775
+            </strong>
+        </li>
+        <li class="quick_li_02">
+            <a href="../teacher_recruit/recruit.html">
+                <img src="image/rightimg.jpg">
+                <p>교사모집</p>
+            </a>
+        </li>
+        <li class="quick_li_04">
+            <a href="#header" class="top_btn">TOP<img src="image/quick_top.png"></a>
+        </li>
+    </ul>
+    <!-- //quickmenu-->
+
+
+
+</body>
+</html>
