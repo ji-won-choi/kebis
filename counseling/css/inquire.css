@@ -1,0 +1,53 @@
+body{background: #fff;height: initial;}
+
+/* 상담가능시간 */
+.inquire-top{text-align: center; height: 335px;border-bottom: 1px solid #ddd;}
+.inquire-top p{font-size: 18px;}
+.pt140{padding-top:85px;}
+.inquire-top .title{font-size:24px;font-weight: 600;margin-bottom: 10px;}
+.inquire-top .sub-title{margin-bottom: 5px;}
+.inquire-top .timetable{padding:0;}
+.inquire-top .timetable li{list-style: none;font-size: 15px;font-weight: 300;margin-bottom: 8px;}
+.inquire-top .timetable li:last-child{margin-bottom: 0;}
+
+/* 문의하기 */
+.inquire-bottom{text-align: center;height:350px;}
+.inquire-bottom .left{width:50%;float:left;padding-top: 130px;}
+.inquire-bottom .left p{font-size: 18px;margin-bottom: 10px;font-weight: 600;}
+.inquire-bottom .left ul{padding:0;}
+.inquire-bottom .left li{list-style:none;font-size: 15px;font-weight: 300;margin-bottom: 8px;}
+.inquire-bottom .left li:last-child{margin-bottom: 0;}
+
+/* 입력 영역 */
+.inquire-bottom .right{width:50%;position: relative;float: right;padding-top: 40px;}
+.inquire-bottom .right form{width: 500px;margin: 0 auto;}
+.inquire-bottom .title{font-size:24px;font-weight: 500;margin-bottom: 10px;}
+
+input, textarea, btn-default{width: 100%;margin-bottom: 5px;padding: 8px 18px;border: none;border-bottom: 1px solid gray;background: transparent;color: #000;}
+.formgroup_name{float: left;}
+.formgroup_teach select{background: none;color: #777;width: 100%;text-align: left;padding: 7px 15px 11px 0px;border: 0;border-bottom: 1px solid grey;border-radius: 0;}
+
+.btnsubmit{width: 100%;background: #000;font-size: 15px;border:1px solid #222;cursor: pointer;color:#fff;margin-top: 30px; padding: 12px 40px;}}
+.btnsubmit strong{font-weight: 600;}
+
+.sr-only {position: absolute;width: 1px;height: 1px;padding: 0;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;}
+
+.w50{width:calc((100% - 14px) / 2)}
+.floatleft{float: left;}
+.floatright{float: right;}
+
+/* 모달 */
+.submit-modal{z-index: 3;display: none;padding-top: 100px;position: fixed;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4);}
+.modal-content{width: 300px !important;height: 100px;margin: 0 auto;margin-top: 20%;border:0;}
+.modal-container{padding: 38px 0;}
+.w3-display-topright {position: absolute;right: 15px;top: 15px;}
+.modal-btn, .modal-button{width:15px;height:15px;color:#000;cursor: pointer;}
+
+
+/* 반응형 */
+@media(max-width: 1000px) {
+    .inquire-top{height: 300px;}
+    .inquire-bottom{height:550px;}
+    .inquire-bottom .left{width:100%;padding: 30px 0;border-bottom: 1px solid #ddd;}
+    .inquire-bottom .right{width:100%;margin-bottom: 50px;}
+}
