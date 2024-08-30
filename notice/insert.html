@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="notice.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<form id="board_insert">
+    <input name="writer" value="admin" type="hidden">
+    <input name="type" value="" type="hidden" id="type">
+    <div class="col-12">
+        <label for="title" class="col-form-label"> 제목 </label>
+        <input class="form-control" name="title" id="title"/>
+
+    </div>
+    <div>
+        <label> 내용 </label>
+        <textarea class="form-control" rows="10" name="content"></textarea>
+    </div>
+</form>
+<div class="text-right">
+    <button class="btn btn-primary" onclick="save()" id="save_btn">저장</button>
+</div>
+</body>
+<script src="../api/userapi.js"></script>
+<script src="../api/boardapi.js"></script>
+<script src="../api/common.js"></script>
+<script>
+    const boardApi = new BoardApi();
+    const type = getParameterByName("type");
+    function save() {
+        const board = $("#board_insert").serialize();
+        console.log(board)
+        boardApi.createBoard(board);
+        setTimeout(function () {
+            opener.parent.reRendering();
+            window.close();
+        }, 500)
+    }
+    setData();
+    function setData(){
+        $("#type").val(type);
+    }
+</script>
+</html>

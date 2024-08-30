@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>basic</title>
+
+    <link rel="stylesheet" href="notice_1.css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+
+    <style>
+
+        h, td, tr, input, textarea, select, FORM {
+            font-family: 고딕;
+            font-size: 1em;
+            border-radius: 5px;
+
+        }
+
+        table, FORM {
+            border: 1px
+            border-spacing: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<!--header-->
+<div class="header">
+    <div class="container">
+
+        <!--logo-->
+        <div class="logo">
+            <a href="../main/main.html"><img src="image/main_logo2.png" alt="깨비야놀자"></a>
+        </div>
+        <!-- //logo-->
+
+        <button type="button" class="mgnb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!--gnbWrap-->
+        <div class="gnbWrap">
+            <button type="button" class="mgnb-close">모바일메뉴닫기</button>
+
+            <ul class='gnb clearfix'>
+                <li class="login_before">
+                    <a href="#">로그인</a>
+                    <ul class="two">
+                        <li><a href="../login/login_main.html">로그인 하기</a></li>
+                        <li><a href="../join/join_main.html">회원가입 하기</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">교구스토어</a>
+                    <ul class="two">
+                        <li><a href="../store/store.html">교구 둘러보기</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">돌봄신청</a>
+                    <ul class="two">
+                        <li><a href="../teacher/produce.html">깨비 선생님은</a></li>
+                        <li><a href="../teacher_profile/index.html">선생님 프로필</a></li>
+                        <li><a href="../counseling/basic.html">상담신청</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">공지사항</a>
+                    <ul class="two">
+                        <li><a href="../notice/notice.html">공지사항</a></li>
+                        <li><a href="../notice/notice_1.html">Q&A</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">회사소개</a>
+                    <ul class="two">
+                        <li><a href="../company/business_03.html">스토리</a></li>
+                        <li><a href="../map/map.html">오시는 길</a></li>
+                    </ul>
+                </li>
+
+                <li class="login_after">
+                    <a href="#">마이페이지</a>
+                    <ul class="two">
+                        <li><a href="../main/main.html" onclick="logout()">로그아웃</a></li>
+                        <li><a href="../update/update.html">회원정보 수정</a></li>
+                        <li><a href="#">깨비캠</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- // gnbWrap-->
+    </div>
+</div>
+<!-- //header-->
+
+
+<!--contents-wrap-->
+<div class='contents-wrap'>
+    <div class='container'>
+
+
+        <a href="#" class="left-banner"><img src="image/leftimg.png" alt="왼쪽배너"></a>
+        <a href="#" class="banner"><img src="image/teacher_banner.png" alt="배너"></a>
+
+        <center>
+            <p class="large-title"> 자주하는 질문</p>
+            <table class="join-form" cellspacing="1" border="1px" id="notice">
+
+            </table>
+
+            <br/>
+            <button id="write" type="button" class="btn btn-primary" onclick="popupInsert()">글쓰기</button>
+
+            <!--
+<button type="submit" class="btn_login"  disabled>가입하기</button>
+<button type="submit" class="btn_login"  disabled>다시입력</button>
+-->
+
+        </center>
+
+    </div>
+</div>
+<!-- //contents-wrap-->
+
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+
+        <!--boxwrap-->
+        <div class="clearfix boxwrap">
+            <div class="box">
+                <p class="title">
+                    <a href="#">BRAND</a>
+                </p>
+                <ul>
+                    <li><a href="../company/business_03.html"> 회사소개 </a></li>
+                    <li><a href="../map/map.html">오시는 길</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <p class="title">
+                    <a href="#">PROGRAM</a>
+                </p>
+                <ul>
+                    <li><a href="../store/store.html">교구둘러보기</a></li>
+                    <li><a href="#">교구추천받기</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <p class="title">
+                    <a href="#">TEACHER</a>
+                </p>
+                <ul>
+                    <li><a href="..//teacher/produce.html">깨비쌤 소개</a></li>
+                    <li><a href="../teacher_profile/index.html">선생님 둘러보기</a></li>
+                    <li><a href="../teacher_recruit/recruit.html">깨비쌤 지원하기</a></li>
+                </ul>
+            </div>
+
+
+            <div class="box">
+                <p class="title">
+                    <a href="#">NOTICE</a>
+                </p>
+                <ul>
+                    <li><a href="../notice/notice.html">공지사항</a></li>
+                    <li><a href="../notice/notice_1.html">자주하는 질문</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <!--//boxwrap-->
+
+        <!--copy-->
+        <div class="copy">
+            <div class="Contact_btn clearfix">
+                <a href="/pageView/315?t=1592268898731" class="btn btn-default btn-sm">개인정보취급방침</a>
+                <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="btn btn-default btn-sm">이용약관</a>
+            </div>
+            <address class="address">
+
+                <p class="title">(주)에스와이에듀 대표 : 정상윤</p>
+                <p>사업자번호 : 104-86-53007</p>
+                <p>주소: 서울특별시 중구 서소문로 89, 순화빌딩 15층</p>
+                <p>대표전화: 0000-0000</p>
+
+            </address>
+            <p class="copyright">Copyright ⓒ 0000. All Rights Reserved.</p>
+        </div>
+        <!-- //copy-->
+
+    </div>
+</div>
+<!--//footer-->
+
+<!--quickmenu-->
+<ul id="quickmenu">
+    <li class="quick_li_01">QUICK</li>
+    <li class="quick_li_02">
+        <a href="#">
+            <img src="image/rightimg.jpg">
+            <p>교육문의</p>
+        </a>
+    </li>
+    <li class="quick_li_03">
+        <p>고객센터</p>
+        <strong>
+            1688<br>~<br>6775
+        </strong>
+    </li>
+    <li class="quick_li_02">
+        <a href="../teacher_recruit/recruit.html">
+            <img src="image/rightimg.jpg">
+            <p>교사모집</p>
+        </a>
+    </li>
+    <li class="quick_li_04">
+        <a href="#header" class="top_btn">TOP<img src="image/quick_top.png"></a>
+    </li>
+</ul>
+<!-- //quickmenu-->
+
+
+</body>
+<script src="../api/userapi.js"></script>
+<script src="../api/boardapi.js"></script>
+<script src="../api/common.js"></script>
+<script>
+    let baseUrl = "";
+    let frontUrl = "";
+    const hostName = window.location.hostname;
+    if (hostName === "localhost") {
+        frontUrl = "http://localhost:63342/kebi"
+        baseUrl = "http://localhost:8081"
+    } else {
+        frontUrl = "https://kebi.azurewebsites.net"
+        baseUrl = "https://spring-boot-1604154327452.azurewebsites.net";
+    }
+
+    const boardApi = new BoardApi();
+
+
+    function join() {
+        const a = $("#join_form").serialize();
+        userApi.createUsers(a).done(json => {
+            window.location.href = frontUrl + "/login/login_main.html"
+        });
+    }
+
+    function reRendering() {
+        $("#notice").empty();
+        $("#notice").append(getTable())
+    }
+
+
+    function popup(id) {
+        let url = `detail.html?id=${id}&type=notice_1`;
+        let name = "popup test";
+        let option = "width = 500, height = 500, top = 100, left = 200, location = no"
+        window.open(url, name, option);
+    }
+
+    function popupInsert() {
+        let url = "insert.html?type=notice_1";
+        let name = "popup test";
+        let option = "width = 500, height = 500, top = 100, left = 200, location = no"
+        window.open(url, name, option);
+    }
+
+    function getTable() {
+        let html = "";
+        html += `<tr>
+                    <th colspan="1" width="60%">제목</th>
+                    <th width="20%">작성자</th>
+                    <th width="10%">작성일</th>
+                    <th width="10%">조회</th>
+
+                </tr>
+        `
+        boardApi.getBoardList().done(json => {
+            const result = json.result.filter(v => {
+                return v.type === "notice_1";
+            })
+            result.forEach(tr => {
+                console.log(tr);
+                html += `
+                <tr>
+                    <td><a data-id="${tr.id}" onclick="popup(${tr.id})">${tr.title}</a></td>
+                    <td>관리자</td>
+                    <td>${tr.insertTime.split("T")[0]}</td>
+                    <td>0</td>
+                </tr>
+                `
+            })
+        });
+        return html;
+    }
+
+    $("#notice").append(getTable())
+</script>
+</html>
